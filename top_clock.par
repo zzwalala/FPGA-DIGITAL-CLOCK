@@ -1,0 +1,376 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+DESKTOP-9KKMANK::  Sat Apr 24 12:23:08 2021
+
+par -w -intstyle ise -ol high -t 1 top_clock_map.ncd top_clock.ncd
+top_clock.pcf 
+
+
+Constraints file: top_clock.pcf.
+Loading device for application Rf_Device from file '3s100e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "top_clock" is an NCD, version 3.2, device xc3s100e, package cp132, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.27 2013-10-13".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          53 out of 83     63%
+
+   Number of External Input IOBs                 12
+
+      Number of External Input IBUFs             12
+        Number of LOCed External Input IBUFs     12 out of 12    100%
+
+
+   Number of External Output IOBs                40
+
+      Number of External Output IOBs             40
+        Number of LOCed External Output IOBs     39 out of 40     97%
+
+
+   Number of External Bidir IOBs                  1
+
+      Number of External Bidir IOBs               1
+        Number of LOCed External Bidir IOBs       1 out of 1     100%
+
+
+   Number of BUFGMUXs                        5 out of 24     20%
+   Number of Slices                        537 out of 960    55%
+      Number of SLICEMs                      0 out of 480     0%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 1 secs 
+Finished initial Timing Analysis.  REAL time: 1 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 1 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:93435ec3) REAL time: 1 secs 
+
+Phase 2.7  Design Feasibility Check
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: test<7>
+
+INFO:Place:834 - Only a subset of IOs are locked. Out of 41 IOs, 40 are locked and 1 are not locked. If you would like
+   to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:93435ec3) REAL time: 1 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:93435ec3) REAL time: 1 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+...
+Phase 4.2  Initial Clock and IO Placement (Checksum:af0880d8) REAL time: 2 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:af0880d8) REAL time: 2 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:af0880d8) REAL time: 2 secs 
+
+Phase 7.3  Local Placement Optimization
+...
+Phase 7.3  Local Placement Optimization (Checksum:af1d0188) REAL time: 2 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:af1d0188) REAL time: 2 secs 
+
+Phase 9.8  Global Placement
+..........................
+.............
+......................................................................
+......................
+...........................................
+Phase 9.8  Global Placement (Checksum:a6b9e780) REAL time: 2 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:a6b9e780) REAL time: 2 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:b755d954) REAL time: 3 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:b755d954) REAL time: 3 secs 
+
+Total REAL time to Placer completion: 3 secs 
+Total CPU  time to Placer completion: 3 secs 
+Writing design to file top_clock.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 3754 unrouted;      REAL time: 4 secs 
+
+Phase  2  : 3554 unrouted;      REAL time: 4 secs 
+
+Phase  3  : 746 unrouted;      REAL time: 4 secs 
+
+Phase  4  : 936 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+
+Updating file: top_clock.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+
+Updating file: top_clock.ncd with current fully routed design.
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+WARNING:Route:455 - CLK Net:_and0011_inv may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:_or0002 may have excessive skew because 
+      2 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:_or0003_inv may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:_or0005_inv may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:_or0000_inv may have excessive skew because 
+      2 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:du1/clk_100 may have excessive skew because 
+      3 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:du2/clk_1 may have excessive skew because 
+      1 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:du0/clk_1M may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 10 secs 
+Total CPU time to Router completion: 10 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           s0/clk_1m | BUFGMUX_X1Y10| No   |   64 |  0.032     |  0.070      |
++---------------------+--------------+------+------+------------+-------------+
+|          v0/clk_25M |  BUFGMUX_X2Y1| No   |   32 |  0.031     |  0.073      |
++---------------------+--------------+------+------+------------+-------------+
+|       clk_50M_BUFGP | BUFGMUX_X2Y11| No   |   20 |  0.032     |  0.072      |
++---------------------+--------------+------+------+------------+-------------+
+|            _and0007 |  BUFGMUX_X1Y0| No   |   18 |  0.006     |  0.044      |
++---------------------+--------------+------+------+------------+-------------+
+|    mode_choose_IBUF | BUFGMUX_X1Y11| No   |    1 |  0.000     |  0.057      |
++---------------------+--------------+------+------+------------+-------------+
+|            _and0001 |         Local|      |    5 |  0.163     |  1.936      |
++---------------------+--------------+------+------+------------+-------------+
+|          du0/clk_1M |         Local|      |    9 |  0.017     |  0.796      |
++---------------------+--------------+------+------+------------+-------------+
+|         _or0004_inv |         Local|      |    3 |  0.000     |  0.645      |
++---------------------+--------------+------+------+------------+-------------+
+|           du2/clk_1 |         Local|      |    6 |  0.233     |  1.000      |
++---------------------+--------------+------+------+------------+-------------+
+|        _and0000_inv |         Local|      |    2 |  0.000     |  1.506      |
++---------------------+--------------+------+------+------------+-------------+
+|        _and0010_inv |         Local|      |    3 |  0.000     |  1.128      |
++---------------------+--------------+------+------+------------+-------------+
+|        _and0011_inv |         Local|      |    3 |  0.445     |  1.100      |
++---------------------+--------------+------+------+------------+-------------+
+|             _or0002 |         Local|      |    3 |  0.875     |  1.456      |
++---------------------+--------------+------+------+------------+-------------+
+|         _or0003_inv |         Local|      |    3 |  0.278     |  1.430      |
++---------------------+--------------+------+------+------------+-------------+
+|        _and0002_inv |         Local|      |    2 |  0.000     |  0.653      |
++---------------------+--------------+------+------+------------+-------------+
+|         _or0005_inv |         Local|      |    3 |  0.295     |  0.841      |
++---------------------+--------------+------+------+------------+-------------+
+|        _and0003_inv |         Local|      |    2 |  0.000     |  0.395      |
++---------------------+--------------+------+------+------------+-------------+
+|        _and0004_inv |         Local|      |    2 |  0.000     |  1.428      |
++---------------------+--------------+------+------+------------+-------------+
+|         _or0006_inv |         Local|      |    3 |  0.003     |  1.178      |
++---------------------+--------------+------+------+------------+-------------+
+|         _or0000_inv |         Local|      |    2 |  0.248     |  1.454      |
++---------------------+--------------+------+------+------------+-------------+
+|         _or0001_inv |         Local|      |    2 |  0.000     |  0.656      |
++---------------------+--------------+------+------+------------+-------------+
+|         _or0002_inv |         Local|      |    4 |  0.036     |  1.440      |
++---------------------+--------------+------+------+------------+-------------+
+|            _and0004 |         Local|      |    2 |  0.086     |  1.519      |
++---------------------+--------------+------+------+------------+-------------+
+|         du1/clk_100 |         Local|      |   11 |  0.532     |  1.259      |
++---------------------+--------------+------+------+------------+-------------+
+|            _and0006 |         Local|      |    1 |  0.000     |  0.565      |
++---------------------+--------------+------+------+------------+-------------+
+|            _and0009 |         Local|      |    1 |  0.000     |  1.412      |
++---------------------+--------------+------+------+------------+-------------+
+|            _and0008 |         Local|      |    1 |  0.000     |  1.144      |
++---------------------+--------------+------+------+------------+-------------+
+|            _and0005 |         Local|      |    1 |  0.000     |  1.075      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _an | SETUP       |         N/A|     4.953ns|     N/A|           0
+  d0001                                     | HOLD        |     1.630ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net s0/ | SETUP       |         N/A|     7.269ns|     N/A|           0
+  clk_1m                                    | HOLD        |     1.027ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net du0 | SETUP       |         N/A|     5.344ns|     N/A|           0
+  /clk_1M                                   | HOLD        |     1.067ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net v0/ | SETUP       |         N/A|    10.874ns|     N/A|           0
+  clk_25M                                   | HOLD        |     1.357ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.066ns|     N/A|           0
+  _50M_BUFGP                                | HOLD        |     1.104ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _an | SETUP       |         N/A|     5.837ns|     N/A|           0
+  d0007                                     | HOLD        |     1.420ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net mod | SETUP       |         N/A|     2.787ns|     N/A|           0
+  e_choose_IBUF                             | HOLD        |     1.993ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _or | SETUP       |         N/A|     4.663ns|     N/A|           0
+  0004_inv                                  | HOLD        |     1.406ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net du2 | SETUP       |         N/A|     3.891ns|     N/A|           0
+  /clk_1                                    | HOLD        |     1.075ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _an | SETUP       |         N/A|     4.014ns|     N/A|           0
+  d0000_inv                                 | HOLD        |     1.102ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _an | SETUP       |         N/A|     4.226ns|     N/A|           0
+  d0010_inv                                 | HOLD        |     1.301ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _an | SETUP       |         N/A|     5.103ns|     N/A|           0
+  d0011_inv                                 | HOLD        |     0.908ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _or | SETUP       |         N/A|     4.490ns|     N/A|           0
+  0002                                      | HOLD        |     1.054ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _or | SETUP       |         N/A|     5.149ns|     N/A|           0
+  0003_inv                                  | HOLD        |     1.184ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _an | SETUP       |         N/A|     3.251ns|     N/A|           0
+  d0002_inv                                 | HOLD        |     1.164ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _or | SETUP       |         N/A|     4.702ns|     N/A|           0
+  0005_inv                                  | HOLD        |     1.020ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _an | SETUP       |         N/A|     3.624ns|     N/A|           0
+  d0003_inv                                 | HOLD        |     1.268ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _an | SETUP       |         N/A|     5.017ns|     N/A|           0
+  d0004_inv                                 | HOLD        |     1.573ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _or | SETUP       |         N/A|     4.818ns|     N/A|           0
+  0006_inv                                  | HOLD        |     1.353ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _or | SETUP       |         N/A|     4.218ns|     N/A|           0
+  0000_inv                                  | HOLD        |     1.608ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _or | SETUP       |         N/A|     3.780ns|     N/A|           0
+  0001_inv                                  | HOLD        |     1.265ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _or | SETUP       |         N/A|     4.182ns|     N/A|           0
+  0002_inv                                  | HOLD        |     1.321ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _an | SETUP       |         N/A|     3.401ns|     N/A|           0
+  d0004                                     | HOLD        |     1.237ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net du1 | SETUP       |         N/A|     4.031ns|     N/A|           0
+  /clk_100                                  | HOLD        |     0.796ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _an | SETUP       |         N/A|     2.496ns|     N/A|           0
+  d0006                                     | HOLD        |     1.760ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _an | SETUP       |         N/A|     2.751ns|     N/A|           0
+  d0009                                     | HOLD        |     1.964ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _an | SETUP       |         N/A|     2.324ns|     N/A|           0
+  d0008                                     | HOLD        |     1.623ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net _an | SETUP       |         N/A|     2.364ns|     N/A|           0
+  d0005                                     | HOLD        |     1.655ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 11 secs 
+Total CPU time to PAR completion: 10 secs 
+
+Peak Memory Usage:  4444 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 9
+Number of info messages: 2
+
+Writing design to file top_clock.ncd
+
+
+
+PAR done!

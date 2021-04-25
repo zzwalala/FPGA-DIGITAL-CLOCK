@@ -1,0 +1,59 @@
+NET "color_out[0]" LOC = J13;
+NET "color_out[1]" LOC = H13;
+NET "color_out[2]" LOC = G14;
+NET "color_out[7]" LOC = C14;
+NET "color_out[6]" LOC = D13;
+NET "color_out[5]" LOC = F13;
+NET "color_out[4]" LOC = F14;
+NET "color_out[3]" LOC = G13;
+NET "vga_flag" LOC = E2;
+NET "h_sync" LOC = J14;
+NET "v_sync" LOC = K13;
+
+NET "AN[0]" LOC = F12;
+NET "AN[1]" LOC = J12;
+NET "AN[2]" LOC = M13;
+NET "AN[3]" LOC = K14;
+NET "seg[7]" LOC = A9;
+NET "seg[6]" LOC = B9;
+NET "seg[5]" LOC = A10;
+NET "seg[4]" LOC = C9;
+NET "seg[3]" LOC = C12;
+NET "seg[2]" LOC = A13;
+NET "seg[1]" LOC = C13;
+NET "seg[0]" LOC = D12;
+NET "segout[7]" LOC = N13;
+NET "segout[0]" LOC = L14;
+NET "segout[1]" LOC = H12;
+NET "segout[2]" LOC = N14;
+NET "segout[3]" LOC = N11;
+NET "segout[4]" LOC = P12;
+NET "segout[5]" LOC = L13;
+NET "segout[6]" LOC = M12;
+NET "alarm" LOC = C6;
+NET "alarm_change_falg" LOC = L3;
+NET "alarm_flag" LOC = P11;
+NET "amorpm" LOC = M5;
+NET "clk_50M" LOC = B8;
+NET "hour_change" LOC = M4;
+NET "minH_change" LOC = C11;
+NET "minL_change" LOC = G12;
+NET "mode_choose" LOC = A7;
+NET "swadd_flag" LOC = K3;
+
+
+NET "tem_flag" LOC = F3;
+NET "hum_flag" LOC = G3;
+NET "dht11" LOC = B5;
+NET "swdec_flag" LOC = B4;
+
+NET "test[0]" LOC = G1;
+NET "test[1]" LOC = P4;
+NET "test[2]" LOC = N4;
+NET "test[3]" LOC = N5;
+NET "test[4]" LOC = P6;
+NET "test[5]" LOC = P7;
+NET "test[6]" LOC = M11;
+
+
+

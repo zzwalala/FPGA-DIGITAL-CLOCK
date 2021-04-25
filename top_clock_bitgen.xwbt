@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\TencentQQ\973286999\FileRecv\Wechat\WeChat Files\wxid_2651816512212\FileStorage\File\2021-04\demo2_1(1)(1)\digital_clock\top_clock.ncd
+OUTFILE=D:\TencentQQ\973286999\FileRecv\Wechat\WeChat Files\wxid_2651816512212\FileStorage\File\2021-04\demo2_1(1)(1)\digital_clock\top_clock.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=D:\TencentQQ\973286999\FileRecv\Wechat\WeChat Files\wxid_2651816512212\FileStorage\File\2021-04\demo2_1(1)(1)\digital_clock
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,578 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml top_clock.twx top_clock.ncd -o top_clock.twr top_clock.pcf
+-ucf top_clock.ucf
+
+Design file:              top_clock.ncd
+Physical constraint file: top_clock.pcf
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock alarm_change_falg to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+AN<1>       |   16.920(F)|_and0004          |   0.000|
+            |   21.173(F)|_or0002           |   0.000|
+            |   18.172(R)|_and0003_inv      |   0.000|
+            |   18.846(R)|_and0004_inv      |   0.000|
+            |   19.495(R)|_or0001_inv       |   0.000|
+            |   22.514(R)|_or0002_inv       |   0.000|
+AN<3>       |   16.207(F)|_and0004          |   0.000|
+            |   20.460(F)|_or0002           |   0.000|
+amorpm      |   13.216(F)|_or0002           |   0.000|
+            |   14.250(R)|_or0002_inv       |   0.000|
+segout<0>   |   16.156(R)|_and0002_inv      |   0.000|
+            |   19.080(R)|_and0003_inv      |   0.000|
+            |   18.877(R)|_and0004_inv      |   0.000|
+            |   20.921(R)|_or0000_inv       |   0.000|
+            |   20.403(R)|_or0001_inv       |   0.000|
+            |   22.545(R)|_or0002_inv       |   0.000|
+            |   18.855(F)|_and0004          |   0.000|
+            |   21.544(F)|_or0002           |   0.000|
+segout<1>   |   17.576(F)|_and0004          |   0.000|
+            |   21.687(F)|_or0002           |   0.000|
+            |   15.677(R)|_and0002_inv      |   0.000|
+            |   17.801(R)|_and0003_inv      |   0.000|
+            |   17.694(R)|_and0004_inv      |   0.000|
+            |   21.064(R)|_or0000_inv       |   0.000|
+            |   19.124(R)|_or0001_inv       |   0.000|
+            |   21.266(R)|_or0002_inv       |   0.000|
+segout<2>   |   18.058(F)|_and0004          |   0.000|
+            |   21.793(F)|_or0002           |   0.000|
+            |   16.232(R)|_and0002_inv      |   0.000|
+            |   18.283(R)|_and0003_inv      |   0.000|
+            |   18.249(R)|_and0004_inv      |   0.000|
+            |   21.170(R)|_or0000_inv       |   0.000|
+            |   19.777(R)|_or0001_inv       |   0.000|
+            |   21.748(R)|_or0002_inv       |   0.000|
+segout<3>   |   15.628(R)|_and0002_inv      |   0.000|
+            |   17.817(R)|_and0003_inv      |   0.000|
+            |   17.645(R)|_and0004_inv      |   0.000|
+            |   21.022(R)|_or0000_inv       |   0.000|
+            |   19.140(R)|_or0001_inv       |   0.000|
+            |   21.282(R)|_or0002_inv       |   0.000|
+            |   17.592(F)|_and0004          |   0.000|
+            |   21.645(F)|_or0002           |   0.000|
+segout<4>   |   17.929(F)|_and0004          |   0.000|
+            |   21.884(F)|_or0002           |   0.000|
+            |   15.824(R)|_and0002_inv      |   0.000|
+            |   18.154(R)|_and0003_inv      |   0.000|
+            |   17.951(R)|_and0004_inv      |   0.000|
+            |   21.261(R)|_or0000_inv       |   0.000|
+            |   19.477(R)|_or0001_inv       |   0.000|
+            |   21.619(R)|_or0002_inv       |   0.000|
+segout<5>   |   16.032(R)|_and0002_inv      |   0.000|
+            |   18.108(R)|_and0003_inv      |   0.000|
+            |   18.049(R)|_and0004_inv      |   0.000|
+            |   21.030(R)|_or0000_inv       |   0.000|
+            |   19.642(R)|_or0001_inv       |   0.000|
+            |   21.573(R)|_or0002_inv       |   0.000|
+            |   17.883(F)|_and0004          |   0.000|
+            |   21.653(F)|_or0002           |   0.000|
+segout<6>   |   19.173(F)|_and0004          |   0.000|
+            |   21.797(F)|_or0002           |   0.000|
+            |   16.474(R)|_and0002_inv      |   0.000|
+            |   19.398(R)|_and0003_inv      |   0.000|
+            |   19.195(R)|_and0004_inv      |   0.000|
+            |   21.174(R)|_or0000_inv       |   0.000|
+            |   20.721(R)|_or0001_inv       |   0.000|
+            |   22.863(R)|_or0002_inv       |   0.000|
+------------+------------+------------------+--------+
+
+Clock clk_50M to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+AN<0>       |   10.336(R)|clk_50M_BUFGP     |   0.000|
+AN<1>       |   10.490(R)|clk_50M_BUFGP     |   0.000|
+AN<2>       |   10.057(R)|clk_50M_BUFGP     |   0.000|
+AN<3>       |    9.303(R)|clk_50M_BUFGP     |   0.000|
+segout<0>   |   12.771(R)|clk_50M_BUFGP     |   0.000|
+segout<1>   |   12.751(R)|clk_50M_BUFGP     |   0.000|
+segout<2>   |   13.306(R)|clk_50M_BUFGP     |   0.000|
+segout<3>   |   12.702(R)|clk_50M_BUFGP     |   0.000|
+segout<4>   |   12.898(R)|clk_50M_BUFGP     |   0.000|
+segout<5>   |   13.106(R)|clk_50M_BUFGP     |   0.000|
+segout<6>   |   13.062(R)|clk_50M_BUFGP     |   0.000|
+------------+------------+------------------+--------+
+
+Clock hour_change to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+AN<1>       |   17.825(R)|_and0004_inv      |   0.000|
+            |   21.490(R)|_or0002_inv       |   0.000|
+            |   15.382(F)|_and0004          |   0.000|
+            |   20.149(F)|_or0002           |   0.000|
+AN<3>       |   14.669(F)|_and0004          |   0.000|
+            |   19.436(F)|_or0002           |   0.000|
+amorpm      |   12.192(F)|_or0002           |   0.000|
+            |   13.226(R)|_or0002_inv       |   0.000|
+segout<0>   |   17.856(R)|_and0004_inv      |   0.000|
+            |   21.521(R)|_or0002_inv       |   0.000|
+            |   17.317(F)|_and0004          |   0.000|
+            |   20.520(F)|_or0002           |   0.000|
+segout<1>   |   16.673(R)|_and0004_inv      |   0.000|
+            |   20.242(R)|_or0002_inv       |   0.000|
+            |   16.038(F)|_and0004          |   0.000|
+            |   20.663(F)|_or0002           |   0.000|
+segout<2>   |   16.520(F)|_and0004          |   0.000|
+            |   20.769(F)|_or0002           |   0.000|
+            |   17.228(R)|_and0004_inv      |   0.000|
+            |   20.724(R)|_or0002_inv       |   0.000|
+segout<3>   |   16.624(R)|_and0004_inv      |   0.000|
+            |   20.258(R)|_or0002_inv       |   0.000|
+            |   16.054(F)|_and0004          |   0.000|
+            |   20.621(F)|_or0002           |   0.000|
+segout<4>   |   16.391(F)|_and0004          |   0.000|
+            |   20.860(F)|_or0002           |   0.000|
+            |   16.930(R)|_and0004_inv      |   0.000|
+            |   20.595(R)|_or0002_inv       |   0.000|
+segout<5>   |   16.345(F)|_and0004          |   0.000|
+            |   20.629(F)|_or0002           |   0.000|
+            |   17.028(R)|_and0004_inv      |   0.000|
+            |   20.549(R)|_or0002_inv       |   0.000|
+segout<6>   |   17.635(F)|_and0004          |   0.000|
+            |   20.773(F)|_or0002           |   0.000|
+            |   18.174(R)|_and0004_inv      |   0.000|
+            |   21.839(R)|_or0002_inv       |   0.000|
+------------+------------+------------------+--------+
+
+Clock minH_change to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+AN<1>       |   17.255(R)|_and0003_inv      |   0.000|
+            |   17.488(R)|_or0001_inv       |   0.000|
+            |   18.515(R)|_or0005_inv       |   0.000|
+            |   17.422(R)|_or0006_inv       |   0.000|
+AN<3>       |   16.709(R)|_or0006_inv       |   0.000|
+segout<0>   |   18.163(R)|_and0003_inv      |   0.000|
+            |   18.396(R)|_or0001_inv       |   0.000|
+            |   18.546(R)|_or0005_inv       |   0.000|
+            |   17.527(R)|_or0006_inv       |   0.000|
+segout<1>   |   16.884(R)|_and0003_inv      |   0.000|
+            |   17.117(R)|_or0001_inv       |   0.000|
+            |   17.738(R)|_or0005_inv       |   0.000|
+            |   17.509(R)|_or0006_inv       |   0.000|
+segout<2>   |   17.366(R)|_and0003_inv      |   0.000|
+            |   17.770(R)|_or0001_inv       |   0.000|
+            |   18.293(R)|_or0005_inv       |   0.000|
+            |   18.036(R)|_or0006_inv       |   0.000|
+segout<3>   |   16.900(R)|_and0003_inv      |   0.000|
+            |   17.133(R)|_or0001_inv       |   0.000|
+            |   17.689(R)|_or0005_inv       |   0.000|
+            |   17.467(R)|_or0006_inv       |   0.000|
+segout<4>   |   17.237(R)|_and0003_inv      |   0.000|
+            |   17.470(R)|_or0001_inv       |   0.000|
+            |   17.885(R)|_or0005_inv       |   0.000|
+            |   17.706(R)|_or0006_inv       |   0.000|
+segout<5>   |   17.191(R)|_and0003_inv      |   0.000|
+            |   17.635(R)|_or0001_inv       |   0.000|
+            |   18.093(R)|_or0005_inv       |   0.000|
+            |   17.836(R)|_or0006_inv       |   0.000|
+segout<6>   |   18.481(R)|_and0003_inv      |   0.000|
+            |   18.714(R)|_or0001_inv       |   0.000|
+            |   18.864(R)|_or0005_inv       |   0.000|
+            |   17.845(R)|_or0006_inv       |   0.000|
+------------+------------+------------------+--------+
+
+Clock minL_change to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+AN<1>       |   17.305(R)|_or0004_inv       |   0.000|
+segout<0>   |   14.605(R)|_and0002_inv      |   0.000|
+            |   17.217(R)|_or0000_inv       |   0.000|
+            |   17.781(R)|_or0003_inv       |   0.000|
+            |   18.213(R)|_or0004_inv       |   0.000|
+segout<1>   |   14.126(R)|_and0002_inv      |   0.000|
+            |   17.360(R)|_or0000_inv       |   0.000|
+            |   17.761(R)|_or0003_inv       |   0.000|
+            |   16.934(R)|_or0004_inv       |   0.000|
+segout<2>   |   14.681(R)|_and0002_inv      |   0.000|
+            |   17.466(R)|_or0000_inv       |   0.000|
+            |   18.316(R)|_or0003_inv       |   0.000|
+            |   17.416(R)|_or0004_inv       |   0.000|
+segout<3>   |   14.077(R)|_and0002_inv      |   0.000|
+            |   17.318(R)|_or0000_inv       |   0.000|
+            |   17.712(R)|_or0003_inv       |   0.000|
+            |   16.950(R)|_or0004_inv       |   0.000|
+segout<4>   |   14.273(R)|_and0002_inv      |   0.000|
+            |   17.557(R)|_or0000_inv       |   0.000|
+            |   17.908(R)|_or0003_inv       |   0.000|
+            |   17.287(R)|_or0004_inv       |   0.000|
+segout<5>   |   14.481(R)|_and0002_inv      |   0.000|
+            |   17.326(R)|_or0000_inv       |   0.000|
+            |   18.116(R)|_or0003_inv       |   0.000|
+            |   17.241(R)|_or0004_inv       |   0.000|
+segout<6>   |   14.923(R)|_and0002_inv      |   0.000|
+            |   17.470(R)|_or0000_inv       |   0.000|
+            |   18.072(R)|_or0003_inv       |   0.000|
+            |   18.531(R)|_or0004_inv       |   0.000|
+------------+------------+------------------+--------+
+
+Clock mode_choose to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+AN<1>       |   17.013(F)|mode_choose_IBUF  |   0.000|
+AN<3>       |   15.291(F)|mode_choose_IBUF  |   0.000|
+segout<0>   |   17.044(F)|mode_choose_IBUF  |   0.000|
+segout<1>   |   16.720(F)|mode_choose_IBUF  |   0.000|
+segout<2>   |   17.380(F)|mode_choose_IBUF  |   0.000|
+segout<3>   |   16.709(F)|mode_choose_IBUF  |   0.000|
+segout<4>   |   17.053(F)|mode_choose_IBUF  |   0.000|
+segout<5>   |   17.245(F)|mode_choose_IBUF  |   0.000|
+segout<6>   |   17.362(F)|mode_choose_IBUF  |   0.000|
+------------+------------+------------------+--------+
+
+Clock swadd_flag to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+AN<1>       |   20.465(F)|_and0007          |   0.000|
+            |   20.407(F)|_or0002           |   0.000|
+            |   18.601(R)|_or0001_inv       |   0.000|
+            |   21.748(R)|_or0002_inv       |   0.000|
+AN<3>       |   18.138(F)|_and0007          |   0.000|
+            |   19.694(F)|_or0002           |   0.000|
+amorpm      |   12.450(F)|_or0002           |   0.000|
+            |   13.484(R)|_or0002_inv       |   0.000|
+seg<0>      |   13.753(F)|_and0007          |   0.000|
+seg<1>      |   14.142(F)|_and0007          |   0.000|
+seg<2>      |   14.290(F)|_and0007          |   0.000|
+seg<3>      |   13.877(F)|_and0007          |   0.000|
+seg<4>      |   14.462(F)|_and0007          |   0.000|
+seg<5>      |   13.899(F)|_and0007          |   0.000|
+seg<6>      |   14.254(F)|_and0007          |   0.000|
+seg<7>      |   14.266(F)|_and0007          |   0.000|
+segout<0>   |   21.373(F)|_and0007          |   0.000|
+            |   20.778(F)|_or0002           |   0.000|
+            |   20.744(R)|_or0000_inv       |   0.000|
+            |   19.509(R)|_or0001_inv       |   0.000|
+            |   21.779(R)|_or0002_inv       |   0.000|
+segout<1>   |   20.280(F)|_and0007          |   0.000|
+            |   20.921(F)|_or0002           |   0.000|
+            |   20.887(R)|_or0000_inv       |   0.000|
+            |   18.230(R)|_or0001_inv       |   0.000|
+            |   20.500(R)|_or0002_inv       |   0.000|
+segout<2>   |   20.993(R)|_or0000_inv       |   0.000|
+            |   18.883(R)|_or0001_inv       |   0.000|
+            |   20.982(R)|_or0002_inv       |   0.000|
+            |   20.835(F)|_and0007          |   0.000|
+            |   21.027(F)|_or0002           |   0.000|
+segout<3>   |   20.231(F)|_and0007          |   0.000|
+            |   20.879(F)|_or0002           |   0.000|
+            |   20.845(R)|_or0000_inv       |   0.000|
+            |   18.246(R)|_or0001_inv       |   0.000|
+            |   20.516(R)|_or0002_inv       |   0.000|
+segout<4>   |   20.447(F)|_and0007          |   0.000|
+            |   21.118(F)|_or0002           |   0.000|
+            |   21.084(R)|_or0000_inv       |   0.000|
+            |   18.583(R)|_or0001_inv       |   0.000|
+            |   20.853(R)|_or0002_inv       |   0.000|
+segout<5>   |   20.635(F)|_and0007          |   0.000|
+            |   20.887(F)|_or0002           |   0.000|
+            |   20.853(R)|_or0000_inv       |   0.000|
+            |   18.748(R)|_or0001_inv       |   0.000|
+            |   20.807(R)|_or0002_inv       |   0.000|
+segout<6>   |   20.997(R)|_or0000_inv       |   0.000|
+            |   19.827(R)|_or0001_inv       |   0.000|
+            |   22.097(R)|_or0002_inv       |   0.000|
+            |   21.691(F)|_and0007          |   0.000|
+            |   21.031(F)|_or0002           |   0.000|
+------------+------------+------------------+--------+
+
+Clock swdec_flag to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+AN<1>       |   20.475(F)|_or0002           |   0.000|
+            |   16.793(R)|_or0001_inv       |   0.000|
+            |   21.816(R)|_or0002_inv       |   0.000|
+            |   18.573(R)|_or0004_inv       |   0.000|
+            |   19.633(R)|_or0005_inv       |   0.000|
+            |   18.581(R)|_or0006_inv       |   0.000|
+AN<3>       |   17.868(R)|_or0006_inv       |   0.000|
+            |   19.762(F)|_or0002           |   0.000|
+amorpm      |   12.518(F)|_or0002           |   0.000|
+            |   13.552(R)|_or0002_inv       |   0.000|
+seg<0>      |   11.355(R)|_and0010_inv      |   0.000|
+seg<1>      |   11.989(R)|_and0010_inv      |   0.000|
+seg<2>      |   11.852(R)|_and0010_inv      |   0.000|
+seg<3>      |   12.366(R)|_and0010_inv      |   0.000|
+seg<4>      |   13.313(R)|_and0011_inv      |   0.000|
+seg<5>      |   12.309(R)|_and0011_inv      |   0.000|
+seg<6>      |   12.577(R)|_and0011_inv      |   0.000|
+seg<7>      |   12.777(R)|_and0011_inv      |   0.000|
+segout<0>   |   20.846(F)|_or0002           |   0.000|
+            |   18.283(R)|_or0000_inv       |   0.000|
+            |   17.701(R)|_or0001_inv       |   0.000|
+            |   21.847(R)|_or0002_inv       |   0.000|
+            |   18.408(R)|_or0003_inv       |   0.000|
+            |   19.481(R)|_or0004_inv       |   0.000|
+            |   19.664(R)|_or0005_inv       |   0.000|
+            |   18.686(R)|_or0006_inv       |   0.000|
+segout<1>   |   20.989(F)|_or0002           |   0.000|
+            |   18.426(R)|_or0000_inv       |   0.000|
+            |   16.422(R)|_or0001_inv       |   0.000|
+            |   20.568(R)|_or0002_inv       |   0.000|
+            |   18.388(R)|_or0003_inv       |   0.000|
+            |   18.202(R)|_or0004_inv       |   0.000|
+            |   18.856(R)|_or0005_inv       |   0.000|
+            |   18.668(R)|_or0006_inv       |   0.000|
+segout<2>   |   21.095(F)|_or0002           |   0.000|
+            |   18.532(R)|_or0000_inv       |   0.000|
+            |   17.075(R)|_or0001_inv       |   0.000|
+            |   21.050(R)|_or0002_inv       |   0.000|
+            |   18.943(R)|_or0003_inv       |   0.000|
+            |   18.684(R)|_or0004_inv       |   0.000|
+            |   19.411(R)|_or0005_inv       |   0.000|
+            |   19.195(R)|_or0006_inv       |   0.000|
+segout<3>   |   18.384(R)|_or0000_inv       |   0.000|
+            |   16.438(R)|_or0001_inv       |   0.000|
+            |   20.584(R)|_or0002_inv       |   0.000|
+            |   18.339(R)|_or0003_inv       |   0.000|
+            |   18.218(R)|_or0004_inv       |   0.000|
+            |   18.807(R)|_or0005_inv       |   0.000|
+            |   18.626(R)|_or0006_inv       |   0.000|
+            |   20.947(F)|_or0002           |   0.000|
+segout<4>   |   18.623(R)|_or0000_inv       |   0.000|
+            |   16.775(R)|_or0001_inv       |   0.000|
+            |   20.921(R)|_or0002_inv       |   0.000|
+            |   18.535(R)|_or0003_inv       |   0.000|
+            |   18.555(R)|_or0004_inv       |   0.000|
+            |   19.003(R)|_or0005_inv       |   0.000|
+            |   18.865(R)|_or0006_inv       |   0.000|
+            |   21.186(F)|_or0002           |   0.000|
+segout<5>   |   20.955(F)|_or0002           |   0.000|
+            |   18.392(R)|_or0000_inv       |   0.000|
+            |   16.940(R)|_or0001_inv       |   0.000|
+            |   20.875(R)|_or0002_inv       |   0.000|
+            |   18.743(R)|_or0003_inv       |   0.000|
+            |   18.509(R)|_or0004_inv       |   0.000|
+            |   19.211(R)|_or0005_inv       |   0.000|
+            |   18.995(R)|_or0006_inv       |   0.000|
+segout<6>   |   21.099(F)|_or0002           |   0.000|
+            |   18.536(R)|_or0000_inv       |   0.000|
+            |   18.019(R)|_or0001_inv       |   0.000|
+            |   22.165(R)|_or0002_inv       |   0.000|
+            |   18.699(R)|_or0003_inv       |   0.000|
+            |   19.799(R)|_or0004_inv       |   0.000|
+            |   19.982(R)|_or0005_inv       |   0.000|
+            |   19.004(R)|_or0006_inv       |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock alarm_change_falg
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+alarm_change_falg|    5.017|    4.514|    5.830|    4.490|
+hour_change      |    5.017|    4.514|    5.830|    4.490|
+minH_change      |    3.780|         |         |         |
+minL_change      |    4.218|         |         |         |
+swadd_flag       |    4.218|    4.217|    5.341|    4.490|
+swdec_flag       |    4.218|    4.217|    5.341|    4.490|
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_50M
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_50M        |    4.066|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock hour_change
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+alarm_change_falg|    5.017|    4.514|    5.830|    4.490|
+hour_change      |    5.017|    4.514|    5.830|    4.490|
+swadd_flag       |    4.182|    4.217|    5.341|    4.490|
+swdec_flag       |    4.182|    4.217|    5.341|    4.490|
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock minH_change
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+alarm_change_falg|    3.780|         |         |         |
+hour_change      |         |    5.148|         |         |
+minH_change      |    4.818|         |         |    2.496|
+swadd_flag       |    3.780|         |         |    2.496|
+swdec_flag       |    4.818|    5.148|         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock minL_change
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+alarm_change_falg|    4.218|         |         |         |
+hour_change      |         |    5.745|         |         |
+minL_change      |    5.149|         |         |    2.364|
+swadd_flag       |    4.218|         |         |    2.364|
+swdec_flag       |    5.149|    5.745|         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mode_choose
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+mode_choose    |         |         |         |    2.787|
+swdec_flag     |         |         |         |    2.324|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock swadd_flag
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+alarm_change_falg|    4.218|    4.217|    5.341|    4.490|
+hour_change      |    4.182|    4.217|    5.341|    4.490|
+minH_change      |    3.780|         |         |    6.658|
+minL_change      |    4.218|         |         |    4.629|
+swadd_flag       |    4.218|    4.217|    5.341|    6.658|
+swdec_flag       |    4.218|    4.217|    5.341|    4.490|
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock swdec_flag
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+alarm_change_falg|    4.218|    4.217|    5.341|    4.490|
+hour_change      |    4.182|    5.745|    5.341|    4.490|
+minH_change      |    4.818|         |         |         |
+minL_change      |    5.149|         |         |         |
+mode_choose      |         |         |         |    2.324|
+swadd_flag       |    4.218|    4.217|    5.341|    4.490|
+swdec_flag       |    5.149|    5.745|    5.341|    4.490|
+-----------------+---------+---------+---------+---------+
+
+Pad to Pad
+-----------------+---------------+---------+
+Source Pad       |Destination Pad|  Delay  |
+-----------------+---------------+---------+
+alarm_change_falg|AN<1>          |   16.789|
+alarm_change_falg|AN<3>          |   12.241|
+alarm_change_falg|segout<0>      |   17.697|
+alarm_change_falg|segout<1>      |   16.418|
+alarm_change_falg|segout<2>      |   16.900|
+alarm_change_falg|segout<3>      |   16.434|
+alarm_change_falg|segout<4>      |   16.771|
+alarm_change_falg|segout<5>      |   16.725|
+alarm_change_falg|segout<6>      |   18.015|
+hum_flag         |AN<1>          |   15.869|
+hum_flag         |AN<3>          |   14.138|
+hum_flag         |segout<0>      |   17.015|
+hum_flag         |segout<1>      |   16.051|
+hum_flag         |segout<2>      |   16.606|
+hum_flag         |segout<3>      |   16.002|
+hum_flag         |segout<4>      |   16.198|
+hum_flag         |segout<5>      |   16.406|
+hum_flag         |segout<6>      |   17.333|
+swadd_flag       |AN<1>          |   16.612|
+swadd_flag       |AN<3>          |   11.149|
+swadd_flag       |seg<0>         |    8.788|
+swadd_flag       |seg<1>         |    9.110|
+swadd_flag       |seg<2>         |    8.853|
+swadd_flag       |seg<3>         |    8.826|
+swadd_flag       |seg<4>         |    8.984|
+swadd_flag       |seg<5>         |    8.758|
+swadd_flag       |seg<6>         |    9.368|
+swadd_flag       |seg<7>         |    8.959|
+swadd_flag       |segout<0>      |   17.520|
+swadd_flag       |segout<1>      |   16.241|
+swadd_flag       |segout<2>      |   16.723|
+swadd_flag       |segout<3>      |   16.257|
+swadd_flag       |segout<4>      |   16.594|
+swadd_flag       |segout<5>      |   16.548|
+swadd_flag       |segout<6>      |   17.838|
+swdec_flag       |AN<1>          |   16.172|
+swdec_flag       |AN<3>          |   13.848|
+swdec_flag       |seg<0>         |    8.445|
+swdec_flag       |seg<1>         |    8.916|
+swdec_flag       |seg<2>         |    8.976|
+swdec_flag       |seg<3>         |    8.580|
+swdec_flag       |seg<4>         |    8.135|
+swdec_flag       |seg<5>         |    8.091|
+swdec_flag       |seg<6>         |    8.156|
+swdec_flag       |seg<7>         |    8.146|
+swdec_flag       |segout<0>      |   16.725|
+swdec_flag       |segout<1>      |   16.607|
+swdec_flag       |segout<2>      |   17.162|
+swdec_flag       |segout<3>      |   16.558|
+swdec_flag       |segout<4>      |   16.754|
+swdec_flag       |segout<5>      |   16.962|
+swdec_flag       |segout<6>      |   17.043|
+tem_flag         |AN<1>          |   14.817|
+tem_flag         |AN<3>          |   14.104|
+tem_flag         |segout<0>      |   16.003|
+tem_flag         |segout<1>      |   15.325|
+tem_flag         |segout<2>      |   15.880|
+tem_flag         |segout<3>      |   15.276|
+tem_flag         |segout<4>      |   15.472|
+tem_flag         |segout<5>      |   15.680|
+tem_flag         |segout<6>      |   16.321|
+-----------------+---------------+---------+
+
+
+Analysis completed Sat Apr 24 12:23:23 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4507 MB
+
+
+
