@@ -1,2 +1,2 @@
 # FPGA_DIGITAL_CLOCK
-## HUST 课设代码 基于 BASYS2
+## HUST 电子课程实际FPGA代码 基于BASYS2的数字钟
